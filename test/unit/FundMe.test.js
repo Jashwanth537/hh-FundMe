@@ -1,6 +1,6 @@
 const { assert, expect } = require("chai")
 const { network, deployments, ethers } = require("hardhat")
-const { developmentChains } = require("../../helper-hardhat-config")
+const { developmentChains } = require("../../helper-hardhat-config")// .. goes back a directory and here double ../ goes back two directories
 
 !developmentChains.includes(network.name)
     ? describe.skip
